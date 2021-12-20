@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/privado.css">
+    <title>Usuarios</title>
+</head>
+<body id="page-top">
+<div id="wrapper">
+    <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+        <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+            <div class="sidebar-brand-icon rotate-n-15"><img src="img/logo2.png" alt="logo"></div>
+        </a>
+            <hr class="sidebar-divider my-0" />
+            <ul id="accordionSidebar" class="navbar-nav text-light">
+                <li class="nav-item"><a class="nav-link" href="privado.html"><i class="bi bi-house-fill"></i><span> Inicio</span></a></li>
+                <li class="nav-item"><a class="nav-link active" href="usuarios.html"><i class="fbi bi-person-badge-fill"></i><span> Usuarios</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="productos.html"><i class="bi bi-archive-fill"></i><span> Productos</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <header id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+            <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                <div class="container-fluid">
+                    <h2>Shop</h2>
+                    <ul class="navbar-nav flex-nowrap ms-auto">
+                        <div class="d-none d-sm-block topbar-divider"></div>
+                        <li class="nav-item dropdown no-arrow">
+                            <div class="nav-item dropdown no-arrow">
+                                <a aria-expanded="false" data-bs-toggle="dropdown" class="dropdown-toggle nav-link" href="#">
+                                    <span class="d-none d-lg-inline me-2 text-gray-600 small" id="user">Nombre usuario</span>
+                                    <img id="imagen" class="prueba border rounded-circle img-profile float-left" src="img/avatar1.jpg"/>
+                                </a>
+                                <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i> </a><a class="dropdown-item" href="#">
+                                    <div class="dropdown-divider"></div>
+                                    <a class="logout dropdown-item" href="http://129.151.114.181:8080/"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i> Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <h3 class="text-dark mb-4">Usuarios</h3>
+                <!-- btn New User -->
+                <div class="card-body text-center shadow">
+                    <img class="rounded-circle mb-3 mt-4" src="img/newUser.png" width="160" height="160" />
+                    <div class="mb-3"><button class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#newUser">Crear nuevo usuario</button></div>
+                </div>
+                <!-- Modal new User -->
+                <div class="modal fade" id="newUser" tabindex="-1" aria-labelledby="modalNewUser" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Nuevo Usuario</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3"><label class="form-label" for="username"><strong>Identificación</strong></label><input id="username" class="form-control" type="text" placeholder="user.name" name="username" /></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="mb-3"><label class="form-label" for="email"><strong>Nombre</strong></label><input id="email" class="form-control" type="email" placeholder="user@example.com" name="email" /></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3"><label class="form-label" for="first_name"><strong>Cumpleaños</strong></label><input id="first_name" class="form-control" type="text" placeholder="John" name="first_name" /></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="mb-3"><label class="form-label" for="last_name"><strong>Mes de cumpleaños</strong></label><input id="last_name" class="form-control" type="text" placeholder="Doe" name="last_name" /></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3"><label class="form-label" for="first_name"><strong>Dirección</strong></label><input id="first_name" class="form-control" type="text" placeholder="John" name="first_name" /></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="mb-3"><label class="form-label" for="last_name"><strong>Celular</strong></label><input id="last_name" class="form-control" type="text" placeholder="Doe" name="last_name" /></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3"><label class="form-label" for="first_name"><strong>Email</strong></label><input id="first_name" class="form-control" type="text" placeholder="John" name="first_name" /></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="mb-3"><label class="form-label" for="last_name"><strong>Password</strong></label><input id="last_name" class="form-control" type="text" placeholder="Doe" name="last_name" /></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3"><label class="form-label" for="first_name"><strong>Zona</strong></label><input id="first_name" class="form-control" type="text" placeholder="John" name="first_name" /></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="mb-3"><label class="form-label" for="last_name"><strong>Tipo</strong></label><input id="last_name" class="form-control" type="text" placeholder="Doe" name="last_name" /></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow">
+                    <div class="card-header py-3">
+                        <p class="text-primary m-0 fw-bold">Lista de Usuarios</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6 text-nowrap">
+                                <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label class="form-label">Show <select class="d-inline-block form-select form-select-sm">
+                                    <option value="10" selected>10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select></label></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id="dataTable_filter" class="text-md-end dataTables_filter"><label class="form-label"><input class="form-control form-control-sm" type="search" aria-controls="dataTable" placeholder="Search" /></label></div>
+                            </div>
+                        </div>
+                        <div id="dataTable" class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info">
+                            <table id="dataTable1" class="table my-0">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Office</th>
+                                    <th>Age</th>
+                                    <th>Start date</th>
+                                    <th>Salary</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><img class="rounded-circle me-2" width="30" height="30" src="avatars/avatar1.jpeg" />Airi Satou</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>33</td>
+                                    <td>2008/11/28</td>
+                                    <td>$162,700</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="rounded-circle me-2" width="30" height="30" src="avatars/avatar2.jpeg" />Angelica Ramos</td>
+                                    <td>Chief Executive Officer(CEO)</td>
+                                    <td>London</td>
+                                    <td>47</td>
+                                    <td>2009/10/09<br /></td>
+                                    <td>$1,200,000</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="rounded-circle me-2" width="30" height="30" src="avatars/avatar3.jpeg" />Ashton Cox</td>
+                                    <td>Junior Technical Author</td>
+                                    <td>San Francisco</td>
+                                    <td>66</td>
+                                    <td>2009/01/12<br /></td>
+                                    <td>$86,000</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="rounded-circle me-2" width="30" height="30" src="avatars/avatar4.jpeg" />Bradley Greer</td>
+                                    <td>Software Engineer</td>
+                                    <td>London</td>
+                                    <td>41</td>
+                                    <td>2012/10/13<br /></td>
+                                    <td>$132,000</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="rounded-circle me-2" width="30" height="30" src="avatars/avatar5.jpeg" />Brenden Wagner</td>
+                                    <td>Software Engineer</td>
+                                    <td>San Francisco</td>
+                                    <td>28</td>
+                                    <td>2011/06/07<br /></td>
+                                    <td>$206,850</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="rounded-circle me-2" width="30" height="30" src="avatars/avatar1.jpeg" />Brielle Williamson</td>
+                                    <td>Integration Specialist</td>
+                                    <td>New York</td>
+                                    <td>61</td>
+                                    <td>2012/12/02<br /></td>
+                                    <td>$372,000</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="rounded-circle me-2" width="30" height="30" src="avatars/avatar2.jpeg" />Bruno Nash<br /></td>
+                                    <td>Software Engineer</td>
+                                    <td>London</td>
+                                    <td>38</td>
+                                    <td>2011/05/03<br /></td>
+                                    <td>$163,500</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="rounded-circle me-2" width="30" height="30" src="avatars/avatar3.jpeg" />Caesar Vance</td>
+                                    <td>Pre-Sales Support</td>
+                                    <td>New York</td>
+                                    <td>21</td>
+                                    <td>2011/12/12<br /></td>
+                                    <td>$106,450</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="rounded-circle me-2" width="30" height="30" src="avatars/avatar4.jpeg" />Cara Stevens</td>
+                                    <td>Sales Assistant</td>
+                                    <td>New York</td>
+                                    <td>46</td>
+                                    <td>2011/12/06<br /></td>
+                                    <td>$145,600</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="rounded-circle me-2" width="30" height="30" src="avatars/avatar5.jpeg" />Cedric Kelly</td>
+                                    <td>Senior JavaScript Developer</td>
+                                    <td>Edinburgh</td>
+                                    <td>22</td>
+                                    <td>2012/03/29<br /></td>
+                                    <td>$433,060</td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <td><strong>Name</strong></td>
+                                    <td><strong>Position</strong></td>
+                                    <td><strong>Office</strong></td>
+                                    <td><strong>Age</strong></td>
+                                    <td><strong>Start date</strong></td>
+                                    <td><strong>Salary</strong></td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 align-self-center">
+                                <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 27</p>
+                            </div>
+                            <div class="col-md-6">
+                                <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                                    <ul class="pagination">
+                                        <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<footer class="bg-white sticky-footer">
+            <div class="container my-auto">
+                <div class="text-center my-auto copyright"><span>Copyright © Brand 2021</span></div>
+            </div>
+        </footer>-->
+    </header>
+</div>
+
+<!--scripts-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

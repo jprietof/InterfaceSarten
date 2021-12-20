@@ -1,0 +1,48 @@
+body{
+  background: #f1f7fc;
+}
+/*-----------------------
+        LOGIN
+--------------------------*/
+.login-clean {
+    padding: 80px 0;
+  }
+  
+  .login-clean form {
+    max-width: 320px;
+    background: #fff;
+    width: 90%;
+    margin: 0 auto;
+
+    padding: 40px;
+    border-radius: 4px;
+    color: #505e6c;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  .login-clean .illustration {
+    text-align: center;
+    padding: 0 0 20px;
+    font-size: 100px;
+    color: rgb(244,71,107);
+  }
+.mb-3 {
+  margin-bottom: 1rem!important;
+}
+
+.login-clean form .btn-primary {
+  background: #f4476b;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 26px;
+  text-shadow: none;
+  outline: none !important;
+}
+.login-clean form .btn-primary:hover{
+  background: #224abe;
+}
+
+  
+      
